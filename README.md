@@ -6,6 +6,8 @@
 
 ## Available Scripts
 
+Запуск скриптов в следующем порядке, после установки зависимостей из package.json (npm install):
+
 ### `npm run serve`
 
 Запуск сервера с mock данными на [http://localhost:8000](http://localhost:8000)
