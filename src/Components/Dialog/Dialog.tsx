@@ -8,8 +8,10 @@ const Dialog = ({children} : IProps) => {
 
     return (
         <div className={c.modal}>
-            <div className={c.dialog}>
-                {children}
+            <div className={c.scrollContainer}>
+                <div className={c.dialog}>
+                    {children}
+                </div>
             </div>
         </div>
     )

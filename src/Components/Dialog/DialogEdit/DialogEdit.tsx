@@ -77,7 +77,7 @@ const DialogEdit = (props: IProps) => {
                         })
                     }
 
-                    {(!id || DialogFormStore.contacts?.length < 10) && 
+                    {(DialogFormStore.contacts?.length < 10) && 
                         <button className={c.add_contact} onClick={DialogFormStore.onAddContact}>
                             Добавить контакт
                             </button>}
