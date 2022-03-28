@@ -1,7 +1,4 @@
-interface IProps {
-  id?: string;
-  search?: string;
-}
+import { IDataGetDto, IDataPostDto } from "./Interfaces/IContactsDto";
 
 class Server {
   public authAddress = `http://localhost:8000/auth/`
@@ -20,10 +17,9 @@ class Server {
     return (data[0].password === password);
   }
 
-  public async getFromServer(props :IProps): Promise<[] | any> {
-    const {id, search} = props;
+  public async getFromServer(search?: string): Promise<IDataGetDto[]> {
     const searchRequest = (search) ? `?q=${search}`: '';
-    const address = this.dataAddress + (id || '') + searchRequest;
+    const address = this.dataAddress + searchRequest;
 
     const response = await fetch(address, {
       method: "GET",
@@ -31,7 +27,18 @@ class Server {
     });
     const data = await response.json();
 
-    console.log('server working, status:', response.status)
+    return data;
+  }
+
+  public async getFromServerById(id: string): Promise<IDataGetDto> {
+    const address = this.dataAddress + (id || '');
+
+    const response = await fetch(address, {
+      method: "GET",
+      headers: {"Content-Type": "application/json"}
+    });
+    const data = await response.json();
+
     return data;
   }
 
@@ -44,7 +51,7 @@ class Server {
     });
   }
 
-  public postToServer(id: string, userInfo: any) {
+  public postToServer(id: string, userInfo: IDataPostDto) {
     const address = this.dataAddress;
   
     fetch(address, {
@@ -54,7 +61,7 @@ class Server {
     });
   }
 
-  public patchToServer(id: string, userInfo: any) {
+  public patchToServer(id: string, userInfo: IDataPostDto) {
     const address = this.dataAddress + id;
   
     fetch(address, {

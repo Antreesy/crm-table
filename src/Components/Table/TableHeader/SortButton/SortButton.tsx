@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Utils from "../../../../Methods/Utils";
 import ContactsStore from "../../../../Stores/ContactsStore";
 import c from "./sortbutton.module.scss"
 

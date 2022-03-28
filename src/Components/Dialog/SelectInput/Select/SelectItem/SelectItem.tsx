@@ -1,4 +1,4 @@
-// import { MouseEventHandler, useState } from "react";
+import { MouseEvent } from "react";
 
 import {choises} from "../../../../../Shared/const/const"
 import c from "./select.module.scss"
@@ -12,7 +12,7 @@ const SelectItem = (props: IProps) => {
     const {id, onClick} = props;
     const name = choises[id].name;
 
-    const handleClick = (e: any) => {
+    const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         
         onClick(id);

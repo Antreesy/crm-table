@@ -1,4 +1,4 @@
-import { IRules, rulesArray } from '../Shared/const/validationRules';
+import { IRules, IRulesValue, rulesArray } from '../Shared/const/validationRules';
 
 class Validation {
   public rule: IRules | null = null;
@@ -7,7 +7,7 @@ class Validation {
 
   public isRequired = false;
 
-  constructor(fields: string | string[], value: string | number | undefined) {
+  constructor(fields: string | string[], value: string | number | boolean) {
     this.validValue = !!value ? value.toString() : '';
     this.rule = this.getRules(fields);
 
@@ -19,7 +19,7 @@ class Validation {
   }
 
   private getRules(fields: string | string[]): IRules | null {
-    const rulesComb: { [key: string]: any } = {};
+    const rulesComb: { [key: string]: IRulesValue } = {};
 
     const ruleFields = typeof fields === 'string' ? [fields] : fields;
 

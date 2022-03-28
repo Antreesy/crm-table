@@ -2,7 +2,7 @@ import Validation from './Validation';
 import { IValidateFieldModel } from '../Interfaces/IValidateFormModel';
 
 export default class Utils {
-  public static validateForm(validateRules: string | string[], value: any) {
+  public static validateForm(validateRules: string | string[], value: string) {
     const validate = new Validation(validateRules, value);
     return validate.checkRules() === '';
   }

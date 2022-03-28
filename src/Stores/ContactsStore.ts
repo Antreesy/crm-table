@@ -27,7 +27,7 @@ class ContactsStore {
       }
 
     public async getDataFromServer(search: string = ""): Promise<IDataGetDto[]> {
-        const data: IDataGetDto[] = await Server.getFromServer({search: search})
+        const data: IDataGetDto[] = await Server.getFromServer(search)
 
         this.data = data;
         this.unsortedData = data;
@@ -38,7 +38,7 @@ class ContactsStore {
     }
 
     public async getDataFromServerById(id: string): Promise<IDataGetDto> {
-        const data: IDataGetDto = await Server.getFromServer({id: id})
+        const data: IDataGetDto = await Server.getFromServerById(id)
 
         this.dataById = data;
         return data;

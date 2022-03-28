@@ -1,10 +1,11 @@
+import { ChangeEvent} from "react";
 import ContactsStore from "../../Stores/ContactsStore";
 import c from "./search.module.scss"
 
 const Search = () => {
     let timeDelay: NodeJS.Timeout;
 
-    const handleChange = (e: any) => {
+    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         const value = e.target.value;
         clearTimeout(timeDelay);
 

@@ -12,6 +12,11 @@ export interface IRules {
   };
 }
 
+export interface IRulesValue {
+    value: string | number | boolean;
+    message: ValidationErrors;
+}
+
 interface IField {
   field: string;
   rules: IRules;

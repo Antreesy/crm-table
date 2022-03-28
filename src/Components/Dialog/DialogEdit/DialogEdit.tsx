@@ -21,7 +21,7 @@ const DialogEdit = (props: IProps) => {
         return () => {
             DialogFormStore.deInit();
         }
-    }, [])
+    }, [id])
 
     const onConfirm = () => {
         DialogFormStore.submitForm();
