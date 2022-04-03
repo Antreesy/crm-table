@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/takeoff-test/static/css/main.6a7ce882.css",
-    "main.js": "/takeoff-test/static/js/main.9d3c1dfd.js",
+    "main.js": "/takeoff-test/static/js/main.74bbb4a3.js",
     "static/media/contact-vk.svg": "/takeoff-test/static/media/contact-vk.39f49815065cee60685f.svg",
     "index.html": "/takeoff-test/index.html",
     "static/media/contact-mail.svg": "/takeoff-test/static/media/contact-mail.7ed25c00c16d6ad1c018.svg",
@@ -14,10 +14,10 @@
     "static/media/add-user.svg": "/takeoff-test/static/media/add-user.05046d527a1398d210af.svg",
     "static/media/arrow.svg": "/takeoff-test/static/media/arrow.dbc4685f47764dfdad39.svg",
     "main.6a7ce882.css.map": "/takeoff-test/static/css/main.6a7ce882.css.map",
-    "main.9d3c1dfd.js.map": "/takeoff-test/static/js/main.9d3c1dfd.js.map"
+    "main.74bbb4a3.js.map": "/takeoff-test/static/js/main.74bbb4a3.js.map"
   },
   "entrypoints": [
     "static/css/main.6a7ce882.css",
-    "static/js/main.9d3c1dfd.js"
+    "static/js/main.74bbb4a3.js"
   ]
 }
