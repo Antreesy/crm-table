@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/takeoff-test/build/static/css/main.5d0ca740.css",
-    "main.js": "/takeoff-test/build/static/js/main.f2922c00.js",
-    "static/media/contact-vk.svg": "/takeoff-test/build/static/media/contact-vk.39f49815065cee60685f.svg",
-    "index.html": "/takeoff-test/build/index.html",
-    "static/media/contact-mail.svg": "/takeoff-test/build/static/media/contact-mail.7ed25c00c16d6ad1c018.svg",
-    "static/media/contact-tel.svg": "/takeoff-test/build/static/media/contact-tel.4f82c4489b459766eb9e.svg",
-    "static/media/spinner.svg": "/takeoff-test/build/static/media/spinner.ab24a45786a1ffa68f61.svg",
-    "static/media/contact-other.svg": "/takeoff-test/build/static/media/contact-other.6b1d1a650d708d1ee56e.svg",
-    "static/media/contact-fb.svg": "/takeoff-test/build/static/media/contact-fb.0b5234099861a533c94f.svg",
-    "static/media/delete.svg": "/takeoff-test/build/static/media/delete.4e461a83db3c318a0682.svg",
-    "static/media/edit.svg": "/takeoff-test/build/static/media/edit.fa4468813d1fb942369b.svg",
-    "static/media/add-user.svg": "/takeoff-test/build/static/media/add-user.05046d527a1398d210af.svg",
-    "static/media/arrow.svg": "/takeoff-test/build/static/media/arrow.dbc4685f47764dfdad39.svg",
-    "main.5d0ca740.css.map": "/takeoff-test/build/static/css/main.5d0ca740.css.map",
-    "main.f2922c00.js.map": "/takeoff-test/build/static/js/main.f2922c00.js.map"
+    "main.css": "/takeoff-test/static/css/main.6a7ce882.css",
+    "main.js": "/takeoff-test/static/js/main.f2922c00.js",
+    "static/media/contact-vk.svg": "/takeoff-test/static/media/contact-vk.39f49815065cee60685f.svg",
+    "index.html": "/takeoff-test/index.html",
+    "static/media/contact-mail.svg": "/takeoff-test/static/media/contact-mail.7ed25c00c16d6ad1c018.svg",
+    "static/media/contact-tel.svg": "/takeoff-test/static/media/contact-tel.4f82c4489b459766eb9e.svg",
+    "static/media/spinner.svg": "/takeoff-test/static/media/spinner.ab24a45786a1ffa68f61.svg",
+    "static/media/contact-other.svg": "/takeoff-test/static/media/contact-other.6b1d1a650d708d1ee56e.svg",
+    "static/media/contact-fb.svg": "/takeoff-test/static/media/contact-fb.0b5234099861a533c94f.svg",
+    "static/media/delete.svg": "/takeoff-test/static/media/delete.4e461a83db3c318a0682.svg",
+    "static/media/edit.svg": "/takeoff-test/static/media/edit.fa4468813d1fb942369b.svg",
+    "static/media/add-user.svg": "/takeoff-test/static/media/add-user.05046d527a1398d210af.svg",
+    "static/media/arrow.svg": "/takeoff-test/static/media/arrow.dbc4685f47764dfdad39.svg",
+    "main.6a7ce882.css.map": "/takeoff-test/static/css/main.6a7ce882.css.map",
+    "main.f2922c00.js.map": "/takeoff-test/static/js/main.f2922c00.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d0ca740.css",
+    "static/css/main.6a7ce882.css",
     "static/js/main.f2922c00.js"
   ]
 }
