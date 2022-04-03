@@ -1,23 +1,13 @@
 {
   "files": {
-    "main.css": "/takeoff-test/static/css/main.6a7ce882.css",
-    "main.js": "/takeoff-test/static/js/main.f2922c00.js",
-    "static/media/contact-vk.svg": "/takeoff-test/static/media/contact-vk.39f49815065cee60685f.svg",
+    "main.css": "/takeoff-test/static/css/main.ee4bc0c2.css",
+    "main.js": "/takeoff-test/static/js/main.295dbc18.js",
     "index.html": "/takeoff-test/index.html",
-    "static/media/contact-mail.svg": "/takeoff-test/static/media/contact-mail.7ed25c00c16d6ad1c018.svg",
-    "static/media/contact-tel.svg": "/takeoff-test/static/media/contact-tel.4f82c4489b459766eb9e.svg",
-    "static/media/spinner.svg": "/takeoff-test/static/media/spinner.ab24a45786a1ffa68f61.svg",
-    "static/media/contact-other.svg": "/takeoff-test/static/media/contact-other.6b1d1a650d708d1ee56e.svg",
-    "static/media/contact-fb.svg": "/takeoff-test/static/media/contact-fb.0b5234099861a533c94f.svg",
-    "static/media/delete.svg": "/takeoff-test/static/media/delete.4e461a83db3c318a0682.svg",
-    "static/media/edit.svg": "/takeoff-test/static/media/edit.fa4468813d1fb942369b.svg",
-    "static/media/add-user.svg": "/takeoff-test/static/media/add-user.05046d527a1398d210af.svg",
-    "static/media/arrow.svg": "/takeoff-test/static/media/arrow.dbc4685f47764dfdad39.svg",
-    "main.6a7ce882.css.map": "/takeoff-test/static/css/main.6a7ce882.css.map",
-    "main.f2922c00.js.map": "/takeoff-test/static/js/main.f2922c00.js.map"
+    "main.ee4bc0c2.css.map": "/takeoff-test/static/css/main.ee4bc0c2.css.map",
+    "main.295dbc18.js.map": "/takeoff-test/static/js/main.295dbc18.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a7ce882.css",
-    "static/js/main.f2922c00.js"
+    "static/css/main.ee4bc0c2.css",
+    "static/js/main.295dbc18.js"
   ]
 }
