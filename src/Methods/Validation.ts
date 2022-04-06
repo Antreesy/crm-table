@@ -46,6 +46,7 @@ class Validation {
     if (this.rule.required && !!this.checkRequired()) return this.checkRequired().toString();
     if (this.rule.minLength && !!this.checkMinLength()) return this.checkMinLength().toString();
     if (this.rule.minLength && !!this.checkMaxLength()) return this.checkMaxLength().toString();
+    if (this.rule.isName && !!this.checkName()) return this.checkName().toString();
     if (this.rule.isEmail && !!this.checkEmail()) return this.checkEmail().toString();
 
     return '';
@@ -68,6 +69,15 @@ class Validation {
     if (!this.rule || this.rule.maxLength.value >= this.validValue.length) return '';
 
     return `${this.rule.maxLength.message} - ${this.rule.maxLength.value} символа`;
+  }
+
+  private checkName() {
+    const nameRegExp =
+      /\s/;
+
+    if (!this.rule || !nameRegExp.test(this.validValue)) return '';
+
+    return this.rule.isName.message;
   }
 
   private checkEmail() {

@@ -1,5 +1,6 @@
 enum ValidationErrors {
   RequiredField = 'Это обязательное поле',
+  Name = 'Введены недопустимы символы',
   Email = 'E-mail введён некорректно',
   MinLength = 'Минимальная длина поля',
   MaxLength = 'Максимальная длина поля',
@@ -48,8 +49,13 @@ const rulesArray: IField[] = [
   },
 
   {
-    field: 'fullName',
-    rules: {},
+    field: 'name',
+    rules: {
+      isName: {
+        value: true,
+        message: ValidationErrors.Name,
+      },
+    },
   },
 
   {

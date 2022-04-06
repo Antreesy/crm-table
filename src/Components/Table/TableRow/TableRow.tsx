@@ -1,3 +1,4 @@
+import React from "react";
 import {ContactsCell} from "./ContactsCell";
 import {ActionsCell} from "./ActionsCell";
 
@@ -33,14 +34,46 @@ const TableRow = (props: IProps) => {
   
   return (
     <tr className={c.row}>
-      <td className={c.column}><span className={c.column_id}>{data.id}</span></td>
-      <td className={c.column}><span>{data.surname} {data.name} {data.lastName}</span></td>
-      <td className={c.column}><span>{createdDate}</span>  <span className={c.text_time}>{createdTime}</span></td>
-      <td className={`${c.column} ${c.column_time}`}><span>{updatedDate}</span>  <span className={c.text_time}>{updatedTime}</span></td>
-      <td className={c.column}><ContactsCell contacts={data.contacts} /></td>
-      <td className={c.column}><ActionsCell id={data.id} /></td>
+      <td className={c.column}>
+        <span className={c.column_id}>
+          {data.id}
+        </span>
+      </td>
+
+      <td className={c.column}>
+        <span>
+          {`${data.surname} ${data.name} ${data.lastName}`}
+        </span>
+      </td>
+
+      <td className={c.column}>
+        <span>
+          {createdDate}
+        </span>
+        <span className={c.text_time}>
+          {createdTime}
+        </span>
+      </td>
+
+      <td className={`${c.column} ${c.column_time}`}>
+        <span>
+          {updatedDate}
+        </span>
+        <span className={c.text_time}>
+          {updatedTime}
+        </span>
+      </td>
+
+      <td className={c.column}>
+        <ContactsCell contacts={data.contacts} />
+      </td>
+
+      <td className={c.column}>
+        <ActionsCell id={data.id} />
+      </td>
+
     </tr>
   );
-  }
+}
 
   export default TableRow;

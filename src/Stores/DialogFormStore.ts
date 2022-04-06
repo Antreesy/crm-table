@@ -33,9 +33,9 @@ class DialogFormStore {
       };
     
       public validRules: IValidateRulesModel = {
-        surname: ['required', 'length'],
-        name: ['required', 'length'],
-        lastName: ['required', 'length'],
+        surname: ['required', 'length', 'name'],
+        name: ['required', 'length', 'name'],
+        lastName: ['required', 'length', 'name'],
       };
 
     constructor() {
@@ -94,7 +94,6 @@ class DialogFormStore {
 
     public submitForm = () => {
         [this.validField, this.isValid] = Utils.checkValidity(this.validField);
-        console.log(toJS(this.validField), this.isValid)
         if (!this.isValid) return;
 
         this.updatedAt = new Date().toJSON();
