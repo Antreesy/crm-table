@@ -73,7 +73,7 @@ class Validation {
 
   private checkName() {
     const nameRegExp =
-      /\s/;
+      /\s|ᅠ/;
 
     if (!this.rule || !nameRegExp.test(this.validValue)) return '';
 
